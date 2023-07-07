@@ -1,4 +1,3 @@
-
 ## What is tmux?
 
 Tmux is a **terminal multiplexer**. It creates a host **server** on your Linode and connects to it with a client window. If the client is disconnected, the server keeps running. When you reconnect to your Linode after rebooting your computer or losing your Internet connection, you can reattach to the tmux session and the files you were working with will still be open, and the processes you had running will still be active.
@@ -156,7 +155,6 @@ It's also possible to type shorter versions of a command, for example: "new-se".
 
 1.  As you get comfortable with tmux, you may want to change some of the defaults. Using a text editor, create a configuration file in your user's home directory:
 
-    {{< file "~/.tmux.conf" conf >}}
 # Uncomment the lines with the options you want to activate (by deleting the preceding "#")
 
 # Allow mouse interaction
@@ -169,7 +167,6 @@ It's also possible to type shorter versions of a command, for example: "new-se".
 
 # Display CPU load average for the last 1,5 and 15 minutes, in the status bar
 set -g status-right "#(cut -d ' ' -f -3 /proc/loadavg) %H:%M %d-%b-%y"
-{{< /file >}}
 
 2.  When you have saved your changes to this file, load the new configuration. Enter the tmux command mode by pressing **Prefix** then **:**, then use the following command:
 
