@@ -185,3 +185,12 @@ Whenever you launch tmux, a server is initiated. You can connect to a tmux serve
 This attaches a new session. If a session already exists and want to attach to it, run the following command instead:
 
     tmux -L linode_socket attach
+
+    ```php
+<?php
+require 'vendor/autoload.php';
+
+// This will output the barcode as HTML output to display in the browser
+$generator = new Picqer\Barcode\BarcodeGeneratorHTML();
+echo $generator->getBarcode('081231723897', $generator::TYPE_CODE_128);
+```
